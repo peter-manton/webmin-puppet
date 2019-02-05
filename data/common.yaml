@@ -1,0 +1,13 @@
+---
+webmin::webmin_package_name: webmin
+webmin::install: true
+webmin::portnum: 9000
+webmin::managed_config: false 
+webmin::main_config_path: /etc/webmin/miniserv.conf
+webmin::group_config_path: /etc/webmin/webmin.groups
+webmin::user_config_path: /etc/webmin/miniserv.users
+webmin::acl_config_path: /etc/webmin/webmin.acl
+webmin::certificate: ~ 
+webmin::certificate_path: /etc/webmin/miniserv.pem
+webmin::webmin_groups: ~
+webmin::webmin_users: ~

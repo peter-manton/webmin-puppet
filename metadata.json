@@ -1,0 +1,25 @@
+{
+  "name": "petermanton-webmin",
+  "version": "0.2.0",
+  "author": "Peter Manton",
+  "summary": "A module used to perform installation and configuration of webmin.",
+  "license": "Apache-2.0",
+  "source": "https://github.com/peter-manton/webmin-puppet",
+  "project_page": "https://github.com/peter-manton/webmin-puppet",
+  "issues_url": "https://github.com/peter-manton/webmin-puppet/issues",
+  "dependencies": [
+    {
+      "name": "puppet/yum",
+      "version_requirement": ">= 3.1.0"
+    },
+    {
+      "name": "puppetlabs/apt",
+      "version_requirement": ">= 6.1.0"
+    },
+    {
+      "name": "puppetlabs/stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "data_provider": null
+}

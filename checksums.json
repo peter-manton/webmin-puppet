@@ -1,0 +1,17 @@
+{
+  "Gemfile": "0b0ef34a57239868636b26141342423f",
+  "README.md": "cacb4fcaa180735aebb44bd096c6a99e",
+  "Rakefile": "158b889261acd98356f6e0f2a031b6b9",
+  "data/Debian-family.yaml": "fdddc9f8f3f667f7da6675781d051a9b",
+  "data/RedHat-family.yaml": "196cf70c8ce3ce5e5a2725c2c2e4dc25",
+  "data/common.yaml": "5c0c35d2aca57461b69b6087d938ecde",
+  "examples/hiera.yaml": "05279af2c855b939cde41a8d6f6e7232",
+  "examples/init.pp": "5489b39bc9773bb2f8b56c6d81b9dfa7",
+  "hiera.yaml": "e8b729387a13b8437cfa47d3fc20029a",
+  "manifests/configure.pp": "c7ab55cb1de79dec5ed1f24ee208426e",
+  "manifests/init.pp": "b898d53206ca5c5ffe6b678d772c4c79",
+  "manifests/install.pp": "9e4bc92b256e1b4a4a41e84a72d4ec96",
+  "metadata.json": "d07c0366f55319d68a682699dc1229be",
+  "spec/classes/init_spec.rb": "f37cd9a9047208bf5fada0d80d4fa81e",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc"
+}

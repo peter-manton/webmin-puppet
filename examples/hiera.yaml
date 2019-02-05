@@ -1,0 +1,21 @@
+---
+
+# Determines whether or not webmin will be installed by this package or not
+webmin::install: true
+# Defines the bind port for webmin
+webmin::portnum: 8080
+# Determines whether webmin will soley manage the configuration (I recommend this is set to true in most cases.)
+webmin::managed_config: true
+# Defines where the certificate for Puppet is stored (this should point at a Puppet mount point.)
+webmin::certificate: puppet:///certs/certificate.pem
+
+# Defines the groups and thier assigned roles e.g. <group_name>: <role1> <role2> <role3> ...
+webmin::webmin_groups:
+    - 'group1:shell custom filemin tunnel file phpini cpan'
+    - 'group2:dovecot exim fetchmail jabber ldap-server mysql openslp postfix postgresql'
+
+# Defines the users and their assigned group. (Note: Currently only OS level users are supported.)
+webmin::webmin_users:
+    - 'user1:group1'
+    - 'user2:group1'
+    - 'user3:group2'

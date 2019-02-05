@@ -1,0 +1,16 @@
+---
+version: 5
+
+yum::managed_repos:
+    - 'webmin_repo'
+
+yum::repos:
+    webmin_repo:
+        ensure: 'present'
+        enabled: true
+        descr: 'Webmin Software Repository'
+        baseurl: 'https://download.webmin.com/download/yum'
+        mirrorlist: 'https://download.webmin.com/download/yum/mirrorlist'
+        gpgcheck: true
+        gpgkey: 'http://www.webmin.com/jcameron-key.asc'
+        target: '/etc/yum.repos.d/webmin.repo'
