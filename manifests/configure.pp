@@ -40,6 +40,13 @@ class webmin::configure {
     }
     else {
             if $webmin::webmin_groups {
+                # Ensure groups file exists
+                file { "$webmin::group_config_path":
+                ensure  => 'present',
+                replace => 'no',
+                mode    => '0644',
+                }
+
                 # Iterate through groups
                 $webmin::webmin_groups.each |String $wgroup| {
                     $group = split($wgroup, ':')[0]
